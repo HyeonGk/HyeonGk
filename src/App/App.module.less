@@ -1,0 +1,46 @@
+.app {
+    background-color: #a6b28f; /* 전체 배경색 */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative; /* 슬라이드 메뉴가 앱 내에서 이동하도록 설정 */
+}
+
+/* 슬라이드 메뉴 기본 스타일 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #3d5c4a;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%); /* 처음에 메뉴가 화면 바깥에 위치 */
+    transition: transform 0.3s ease-in-out; /* 슬라이드 애니메이션 */
+    z-index: 1000; /* 다른 요소보다 위에 보이도록 */
+}
+
+/* 메뉴가 열렸을 때 (슬라이드 메뉴 오픈) */
+.sidebar.open {
+    transform: translateX(0); /* 메뉴가 열리면서 화면에 나타남 */
+}
+
+.menu-icon {
+    position: fixed; /* 화면에 고정 */
+    top: 40px;
+    left: 40px;
+    font-size: 96px; /* 햄버거 아이콘 크기 */
+    cursor: pointer;
+    z-index: 1001; /* 메뉴보다 더 앞에 위치 */
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.menu-items li {
+    padding: 50px 0;
+    font-size: 54px;
+	font-weight: bold; /* 글자 두께를 더 두껍게 하고 싶다면 */
+}
