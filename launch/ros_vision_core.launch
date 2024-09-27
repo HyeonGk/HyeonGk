@@ -1,0 +1,5 @@
+<launch>
+	<node pkg='ros_vision' type='ros_detectnet.py' name='ros_vision_detectnet' output='screen'/>
+	<node pkg='ros_vision' type='ros_opencv.py' name='ros_vision_OpenCV' output='screen'/>
+	<node pkg='ros_vision' type='ros_5.py' name='ros_vision_core' output='screen'/>
+</launch>	
