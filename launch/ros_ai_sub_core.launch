@@ -1,4 +1,0 @@
-<launch>
-   <node pkg='ros_vision' type='ros_detectnet_subscriber.py' name='ros_detectnet_subscriber' output='screen'>
-   </node>
-</launch>

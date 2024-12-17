@@ -1,4 +1,0 @@
-<launch>
-   <node pkg='ros_vision' type='ros_detectnet.py' name='ros_detectnet' output='screen'>
-   </node>
-</launch>
